@@ -93,7 +93,13 @@ if (selectedTheme === 'deepsea' && (bgUrl === null || bgUrl === 'none' || bgUrl 
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
-}
+}  else if (selectedTheme === 'SFMS' && (bgUrl === null || bgUrl === 'none' || bgUrl === '')) {
+    document.body.style.background = "linear-gradient(to bottom, rgb(255, 000, 000), rgb(0, 0, 0))";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.height = "100%";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
 
 /* If no theme is selected */
 if (selectedTheme === null && (bgUrl === null || bgUrl === 'none' || bgUrl === '')) {
